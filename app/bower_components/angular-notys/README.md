@@ -10,7 +10,7 @@ Getting Started
 =========
 
 
-**Step 1: Installation through bower **
+**Step 1: Installation through bower**
 
     bower install angular-notys
 

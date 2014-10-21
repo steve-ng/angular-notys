@@ -1,6 +1,6 @@
 .noty-div {
   float: left;
-  position: relative;
+  position: fixed;
   left: 50%;
   z-index: 9999999;
   font: 1em/1.5 "PT Sans", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
@@ -82,4 +82,7 @@
 }
 .noty-div .gmail {
   background: #f9edbe;
+}
+.noty-top {
+  top: 10px;
 }

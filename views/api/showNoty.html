@@ -23,11 +23,13 @@
                     showNoty API Guide
                   </h1>
 
+                  <a ng-click="showNotyExample()" class="btn">Click to see how it looks</a>
+
                   <p> To call, simply inject noty into your angular controller/service/factory etc... An example as shown below</p>
                   <pre><code class="javascript">noty.showNoty({
   text: "Deleted an email",
   ttl: 1000000, //time to live in miliseconds
-  type: "default", //success, warning 
+  type: "success", //success, warning, default or gmail 
   options: ['Undo', 'Dismiss'], 
   optionsCallBack:  function callback(optionClicked, optionIndexClicked) {
     //handling code for options clicked
@@ -40,14 +42,13 @@
                   <p> 
                   	<strong> text </strong> - Message to show in the notification </br>
                   	<strong> ttl </strong> - time to live in miliseconds before the notification disappearing on its own </br>
-                  	<strong> type </strong> -theme of the message, can be default, success or warning </br>
+                  	<strong> type </strong> -theme of the message, can be default, success or warning or gmail </br>
                   	<strong> options (optional) </strong> - List of options to provide in the notification </br>
                   	<strong> optionsCallBack (optional) </strong> - if options is stated and when user clicked on one of the options, this callback will be called. </br>
                   	 
                   </p>
                   </br>
 
-                  <a ng-click="showNotyExample()" class="btn">Click to see how it looks</a>
 
                 </div><!-- /.post-content --> 
 
