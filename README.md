@@ -10,12 +10,12 @@ Getting Started
 =========
 
 
-Step 1: Installation through bower 
+**Step 1: Installation through bower **
 
     bower install angular-notys
 
 
-Step 2: AngularJS project set up
+**Step 2: AngularJS project set up**
 
 Add angular-noty as a dependency in your angular project 
 
@@ -33,7 +33,7 @@ Finally inject noty to your services/controllers
     angular.module('your_app_name').controller('your_controller_name', 
     ["$scope", "noty", function ($scope, noty,) {
     
-Step 3: To call noty 
+**Step 3: To call noty **
 
 
     noty.showNoty({
