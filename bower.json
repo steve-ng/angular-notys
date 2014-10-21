@@ -1,24 +1,22 @@
 {
-  "name": "angular-notys",
-  "version": "0.1.0",
-  "authors": [
-    "Steve <steveng.1988@gmail.com>"
-  ],
+  "name": "Angular-Notys",
   "description": "Noty inspired notification for AngularJS",
-  "main": "angular-noty.js",
+  "version": "0.1.0",
+  "main": [
+    "angular-notys.js",
+    "angular-notys.css"
+  ],
   "keywords": [
     "notifcation",
     "noty"
   ],
-  "dependencies": {
-    "angular": ">1.2.6",
-    "angular-animate": ">1.2.8"
-  },
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "app/bower_components",
-  ]
+    "components"
+  ],
+  "dependencies": {
+    "angular": ">1.2.6",
+    "angular-animate": ">1.2.8"
+  }
 }
