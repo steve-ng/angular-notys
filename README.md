@@ -17,17 +17,17 @@ Step 1: Installation through bower
 
 Step 2: AngularJS project set up
 
-- Add angular-noty as a dependency in your angular project 
+Add angular-noty as a dependency in your angular project 
 
 
     angular.module('your_app_name', ['angular-noty'])
  
-- Add angular-noty directive to the line after your <body>  
+Add angular-noty directive to the line after your <body>  
 
 
     <body>
     <div noty-container></div> 
-- Finally inject noty to your services/controllers
+Finally inject noty to your services/controllers
 
 
     angular.module('your_app_name').controller('your_controller_name', 
