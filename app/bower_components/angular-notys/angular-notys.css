@@ -1,5 +1,7 @@
 .noty-div {
-  position: fixed;
+  float: left;
+  position: relative;
+  left: 50%;
   z-index: 9999999;
   font: 1em/1.5 "PT Sans", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-size: 12px;
@@ -36,11 +38,16 @@
   border-right-style: solid;
   box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px;
   cursor: pointer;
+  margin-bottom: 10px;
+  clear: both;
   border: 1px solid #006400;
   border-color: #cccccc;
   text-align: center;
   padding: 5px;
   overflow: hidden;
+  float: left;
+  position: relative;
+  left: -50%;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
@@ -55,6 +62,7 @@
   opacity: 1;
 }
 .noty-div .noty-item .close {
+  margin-left: 10px;
   float: right;
   font-size: 14px;
 }
@@ -72,12 +80,6 @@
   background-repeat: repeat;
   color: #006400;
 }
-.noty-top {
-  top: 0px;
-  left: 5%;
-  width: 90%;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
+.noty-div .gmail {
+  background: #f9edbe;
 }
