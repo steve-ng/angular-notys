@@ -105,6 +105,9 @@ function($rootScope, $timeout){
 				else if (message.type =="success") {
 					cssClass += "success";
 				}
+				else if (message.type =="gmail") {
+					cssClass += "gmail";
+				}
 
 				return cssClass;
 			};
