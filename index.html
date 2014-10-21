@@ -1,0 +1,79 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+  <head>
+  <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Angular-Notys</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="styles/external/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Noty CSS -->
+    <link href="bower_components/angular-notys/angular-notys.css" rel="stylesheet">
+
+    <!-- Customizable CSS -->
+    <link href="styles/main.css" rel="stylesheet" data-skrollr-stylesheet="">
+    <link href="styles/green.css" rel="stylesheet" title="Color">
+    <link href="styles/owl.carousel.css" rel="stylesheet">
+    <link href="styles/owl.transitions.css" rel="stylesheet">
+    <link href="styles/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    
+    <!-- Fonts -->
+    <link href="fonts/lato.css" rel="stylesheet">
+    <link href="fonts/sourceSan.css" rel="stylesheet">
+
+    <!-- Icons/Glyphs -->
+    <link href="fonts/fontello.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body ng-app="staticApp">
+
+    <div noty-container></div> 
+    <!-- Header -->
+    <div ng-include src="'views/template/header.html'"></div>
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-notys/angular-notys.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/showNoty.js"></script>
+    <!-- endbuild -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

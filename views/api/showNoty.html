@@ -1,0 +1,70 @@
+
+
+  <main>
+
+
+    <!-- ============================================================= SECTION – BLOG ============================================================= -->
+
+    <section id="blog" class="light-bg">
+      <div class="container inner-top-sm inner-bottom classic-blog sidebar-left">
+
+
+        <div class="row">
+
+          <div class="col-md-10 col-md-push-2 inner-left-sm animated fadeInUp" style="opacity: 0;">
+
+            <div class="posts sidemeta isotope">
+
+              <div class="post format-gallery isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+
+                <div class="post-content">
+
+                  <h1 class="post-title">
+                    showNoty API Guide
+                  </h1>
+
+                  <p> To call, simply inject noty into your angular controller/service/factory etc... An example as shown below</p>
+                  <pre><code class="javascript">noty.showNoty({
+  text: "Deleted an email",
+  ttl: 1000000, //time to live in miliseconds
+  type: "default", //success, warning 
+  options: ['Undo', 'Dismiss'], 
+  optionsCallBack:  function callback(optionClicked, optionIndexClicked) {
+    //handling code for options clicked
+  }
+})</code></pre>
+<br>	
+	
+                  <p> A list of all the possible options </p>
+                  
+                  <p> 
+                  	<strong> text </strong> - Message to show in the notification </br>
+                  	<strong> ttl </strong> - time to live in miliseconds before the notification disappearing on its own </br>
+                  	<strong> type </strong> -theme of the message, can be default, success or warning </br>
+                  	<strong> options (optional) </strong> - List of options to provide in the notification </br>
+                  	<strong> optionsCallBack (optional) </strong> - if options is stated and when user clicked on one of the options, this callback will be called. </br>
+                  	 
+                  </p>
+                  </br>
+
+                  <a ng-click="showNotyExample()" class="btn">Click to see how it looks</a>
+
+                </div><!-- /.post-content --> 
+
+              </div><!-- /.post -->
+
+
+            </div><!-- /.posts -->
+
+          </div><!-- /.col -->
+
+        <!-- Sidebar -->
+        <div ng-include src="'views/template/main-sidebar.html'"></div>
+
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+    </section>
+
+
+  </main>

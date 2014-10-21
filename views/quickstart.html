@@ -1,0 +1,83 @@
+
+
+  <main>
+
+
+    <!-- ============================================================= SECTION – BLOG ============================================================= -->
+
+    <section id="blog" class="light-bg">
+      <div class="container inner-top-sm inner-bottom classic-blog sidebar-left">
+
+
+        <div class="row">
+
+          <div class="col-md-10 col-md-push-2 inner-left-sm animated fadeInUp" style="opacity: 0;">
+
+            <div class="posts sidemeta isotope">
+
+              <div class="post format-gallery isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+
+                <div class="post-content">
+
+                  <h1 class="post-title">
+                    QuickStart Guide
+                  </h1>
+
+                  <h2> Pre-requisite </h2>
+                  <p> ngAnimate, installation guide <a href="https://github.com/angular/bower-angular-animate"> here </a> </p> </br> 
+
+                  <h2>Step 1: Installation</h2>
+                  <p> Install the library through bower </p>
+                  <pre><code class="bash">bower install angular-notys</code></pre>
+                  </br>
+
+                  <p> Alternatively, you can add this files to your index.html</p>
+                  <pre><code class="html">&lt;link href="styles/green.css" rel="stylesheet" title="Color"&gt;
+&lt;link href="styles/owl.carousel.css" rel="stylesheet"&gt;</code></pre>
+                  </br>
+
+                  <h2>Step 2: Adding it to your AngularJS Project</h2>
+                  <p> Add angular-noty as a module dependency </p>
+                  <pre><code class="javascript"> angular.module('your_app_name', ['angular-noty'])</code></pre>
+                  </br>
+
+                  <p> Add angular-noty directive to the line after your &lt;body&gt; </p>
+                  <pre><code class="html">&lt;body&gt;
+&lt;div noty-container&gt;&lt;/div&gt; </code></pre>
+                  </br>
+
+                  <p> Finally inject noty to your services/controllers </p>
+                  <pre><code class="javascript">angular.module('your_app_name').controller('your_controller_name', 
+["$scope", "noty", function ($scope, noty,) {</code></pre>
+                  </br>
+
+                  <h2>Step 3: Showing notification</h2>
+                  <p> This will show a simple notification with 2 options. API info can be found <a href> here </a> </p>
+                  <pre><code class="javascript">noty.showNoty({
+  text: "Deleted an email",
+  ttl: 1000000, //time to live in miliseconds
+  type: "default", //success, warning 
+  options: ['Undo', 'Dismiss'], 
+  optionsCallBack:  function callback(optionClicked, optionIndexClicked) {
+    //handling code for options clicked
+  }
+})</code></pre>
+                </div><!-- /.post-content --> 
+
+              </div><!-- /.post -->
+
+
+            </div><!-- /.posts -->
+
+          </div><!-- /.col -->
+
+        <!-- Sidebar -->
+        <div ng-include src="'views/template/main-sidebar.html'"></div>
+
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
+    </section>
+
+
+  </main>
