@@ -2,6 +2,8 @@ Angular-notys
 =========
 >Gmail and Noty inspired notification for AngularJS
 
+![Animated GIF](http://s22.postimg.org/65tnpbgnz/screencast.gif)
+
 [→ See Demo ←](http://steve-ng.github.io/angular-notys/#/api/showNoty)
 
 ___
